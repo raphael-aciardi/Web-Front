@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        const form = document.querySelector("#form");
+        const Name = document.querySelector("#userName");
+        const Email = document.querySelector("#userEmail");
+        const Password = document.querySelector("#userPassword");
+        const ConfPassword = document.querySelector("#userConfPassword");
+
+        // Adiciona evento de submit ao formulário
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            let isValid = true; // Variável para verificar se o formulário é válido
+
+            if (Name.value === "") {
+                alert("Por favor, preencha seu nome");
+                isValid = false;
+            }
+            if (Email.value === "" || !EmailValid(Email.value)) {
+                alert("Por favor, preencha seu e-mail corretamente");
+                isValid = false;
+            }
+            if (!validatePassword(Password.value, 8)) {
+                alert("A senha deve ter no mínimo 8 dígitos");
+                isValid = false;
+            }
+            if (Password.value !== ConfPassword.value) {
+                alert("As senhas não são iguais");
+                isValid = false;
+            }
+
+            // Se todas as validações forem aprovadas, submeter o formulário
+            if (isValid) {
+                form.submit();
+            }
+        });
+
+        // Função para validar o e-mail
+        function EmailValid(Email) {
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/;
+            return emailRegex.test(Email);
+        }
+
+        // Função para validar a senha
+        function validatePassword(Password, minDigits) {
+            return Password.length >= minDigits;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="form" action="">
+
+            <h1>Cadastre-se:</h1>
+
+            <div class="input-box">
+                <input type="name" placeholder="Nome completo" id="userName" required />
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="E-mail" id="userEmail" required />
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Senha" id="userPassword" required />
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Confirmar senha" id="userConfPassword" required />
+            </div>
+
+            <div>
+                <button type="submit" class="btn"> Cadastrar </button>
+            </div>
+
+            <div class="come-back">
+                <a href="index.html">Voltar</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
