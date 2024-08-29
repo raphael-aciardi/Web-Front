@@ -12,7 +12,11 @@ body {
 }
 
 
- header {
+header {
+   display: flex;
+
+   justify-content: space-between;
+   align-items: center;
    background-color: #000;
    position: fixed;
    width: 100%;
@@ -20,7 +24,9 @@ body {
    left: 0;
    z-index: 1000;
    padding: 20px;
+   
 }
+
 
 .navbar {
    display: flex;
@@ -41,6 +47,7 @@ body {
 }
 
 .profile-button img {
+   margin-left: 500px;
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -57,7 +64,7 @@ main {
    display: flex;
    justify-content: center;
    background-color: #333;
-   padding: 20px;
+   padding: 8px;
 }
 
 .filter-btn {
@@ -117,4 +124,9 @@ main {
    padding: 10px;
    text-align: center;
    border-radius: 0 0 10px 10px;
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
 }
