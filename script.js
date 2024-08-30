@@ -29,7 +29,7 @@ form.addEventListener("submit", (event) => {
 
     // Se todas as validações forem aprovadas, submeter o formulário
     if (isValid) {
-        form.submit();
+        window.location.href="index.html";
     }
 });
 
