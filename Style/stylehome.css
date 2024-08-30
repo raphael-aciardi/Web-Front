@@ -197,6 +197,7 @@ body {
 
   background-image: url('../Source/Avengers_Endgame.jpg');
   background-size: contain; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-position: center; /* Centers the background image */;
   margin: 0;
  }
@@ -204,6 +205,7 @@ body {
  .slide:nth-child(2) {
    background-image: url('../Source/I\,_Robot.jpg');
    background-size: contain; /* Ensures the image covers the entire area */
+   background-repeat: no-repeat; /* Impede a repetição da imagem */
    background-position: center; /* Centers the background image */;
    margin: 0;
  }
@@ -211,6 +213,15 @@ body {
  .slide:nth-child(3) {
   background-image: url('../Source/Dune.png');
   background-size: contain; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-position: center; /* Centers the background image */;
   margin: 0;
  }
+
+ .slide:nth-child(4) {
+   background-image: url('../Source/LOTR.jpg');
+   background-size: contain; /* Ensures the image covers the entire area */
+   background-repeat: no-repeat; /* Impede a repetição da imagem */
+   background-position: center; /* Centers the background image */;
+   margin: 0;
+  }
