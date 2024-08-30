@@ -131,46 +131,19 @@ main {
    flex-direction: row;
 }
 
-/* Slideshow container */
+/* Container do slideshow */
 .slideshow-container {
    max-width: 1000px;
    position: relative;
    margin: auto;
  }
  
- /* Hide the images by default */
+ /* Oculta as imagens por padrão */
  .mySlides {
    display: none;
  }
  
- /* Next & previous buttons */
- .prev, .next {
-   cursor: pointer;
-   position: absolute;
-   top: 50%;
-   width: auto;
-   margin-top: -22px;
-   padding: 16px;
-   color: white;
-   font-weight: bold;
-   font-size: 18px;
-   transition: 0.6s ease;
-   border-radius: 0 3px 3px 0;
-   user-select: none;
- }
- 
- /* Position the "next button" to the right */
- .next {
-   right: 0;
-   border-radius: 3px 0 0 3px;
- }
- 
- /* On hover, add a black background color with a little bit see-through */
- .prev:hover, .next:hover {
-   background-color: rgba(0,0,0,0.8);
- }
- 
- /* Caption text */
+ /* Estiliza a legenda */
  .text {
    color: #f2f2f2;
    font-size: 15px;
@@ -179,9 +152,10 @@ main {
    bottom: 8px;
    width: 100%;
    text-align: center;
+   background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
  }
  
- /* Number text (1/3 etc) */
+ /* Estiliza o número da imagem */
  .numbertext {
    color: #f2f2f2;
    font-size: 12px;
@@ -190,7 +164,40 @@ main {
    top: 0;
  }
  
- /* The dots/bullets/indicators */
+ /* Botões de navegação (anterior/próximo) */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Botão anterior à esquerda */
+ .prev {
+   left: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* Botão próximo à direita */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* Efeito de hover dos botões */
+ .prev:hover, .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ /* Indicadores de ponto (círculos) */
  .dot {
    cursor: pointer;
    height: 15px;
@@ -202,18 +209,18 @@ main {
    transition: background-color 0.6s ease;
  }
  
+ /* Cor dos pontos ativos */
  .active, .dot:hover {
    background-color: #717171;
  }
  
- /* Fading animation */
+ /* Efeito de fade */
  .fade {
    animation-name: fade;
    animation-duration: 1.5s;
  }
  
  @keyframes fade {
-   from {opacity: .4}
+   from {opacity: 0.4} 
    to {opacity: 1}
  }
-
