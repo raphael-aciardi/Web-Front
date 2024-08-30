@@ -194,18 +194,23 @@ body {
  }
  
  .slide:nth-child(1) {
-   background-color: #49b293;
+
+  background-image: url('../Source/Avengers_Endgame.jpg');
+  background-size: contain; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the background image */;
+  margin: 0;
  }
  
  .slide:nth-child(2) {
-   background-color: #b03532;
- }
- 
- .slide:nth-child(3) {
-   background-color: #6a478f;
+   background-image: url('../Source/I\,_Robot.jpg');
+   background-size: contain; /* Ensures the image covers the entire area */
+   background-position: center; /* Centers the background image */;
    margin: 0;
  }
  
- .slide:nth-child(4) {
-   background-color: #da6f2b;
+ .slide:nth-child(3) {
+  background-image: url('../Source/Dune.png');
+  background-size: contain; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the background image */;
+  margin: 0;
  }
