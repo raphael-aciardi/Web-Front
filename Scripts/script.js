@@ -48,12 +48,27 @@
             return Password.length >= minDigits;
         }
 
-        nextButton.addEventListener("click", () => {
-        const slideWidth = slide.clientWidth;
-        slidesContainer.scrollLeft += slideWidth;
-        });
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-        prevButton.addEventListener("click", () => {
-        const slideWidth = slide.clientWidth;
-        slidesContainer.scrollLeft -= slideWidth;
-        });
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Display the current slide
+    function showSlides(n) {
+    let slides = document.getElementsByClassName("slides");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    }
