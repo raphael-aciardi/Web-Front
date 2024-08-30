@@ -3,10 +3,7 @@
         const Email = document.querySelector("#userEmail");
         const Password = document.querySelector("#userPassword");
         const ConfPassword = document.querySelector("#userConfPassword");
-        const slidesContainer = document.getElementById("slides-container");
-        const slide = document.querySelector(".slide");
-        const prevButton = document.getElementById("slide-arrow-prev");
-        const nextButton = document.getElementById("slide-arrow-next");
+        
 
         // Adiciona evento de submit ao formulário
         form.addEventListener("submit", (event) => {
