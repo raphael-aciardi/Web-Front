@@ -147,7 +147,9 @@ body {
 
 /* Hide the images by default */
 .mySlides {
-  display: inline;
+   display: none; /* Hide all slides by default */
+    width: 100%;
+    height: auto;
 }
 
 /* Next & previous buttons */
