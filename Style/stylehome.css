@@ -146,10 +146,8 @@ body {
 }
 
 /* Hide the images by default */
-.mySlides {
-   display: none; /* Hide all slides by default */
-    width: 100%;
-    height: auto;
+   .mySlides {
+   display: none;
 }
 
 /* Next & previous buttons */
