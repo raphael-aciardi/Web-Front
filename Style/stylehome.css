@@ -9,6 +9,7 @@ body {
    font-family: Arial, sans-serif;
    background-color: #141414;
    color: #fff;
+   margin:0
 }
 
 
@@ -105,6 +106,9 @@ main {
    height: 200px;
    flex-shrink: 0;
    position: relative;
+}
+img {
+   vertical-align: middle;
 }
 
 .feed-item img {
