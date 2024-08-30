@@ -147,7 +147,7 @@ body {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: inline;
 }
 
 /* Next & previous buttons */
