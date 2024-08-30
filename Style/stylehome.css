@@ -65,6 +65,8 @@ main {
    justify-content: center;
    background-color: #333;
    padding: 8px;
+   align-items: center;
+   margin-top: 10px;
 }
 
 .filter-btn {
@@ -72,10 +74,11 @@ main {
    border: none;
    color: #fff;
    padding: 10px 20px;
-   margin: 0 10px;
+   margin: 1px 10px;
    border-radius: 5px;
    cursor: pointer;
    transition: background-color 0.3s;
+
 }
 
 .filter-btn:hover {
@@ -126,7 +129,32 @@ main {
    border-radius: 0 0 10px 10px;
 }
 
-.header {
+.fixed-size { width: 35px; 
+   height: 35px; 
+   object-fit: cover; 
+   border-radius: 7px;
+}
+.responsive { width: 30px; 
+   height: 30px; 
+   object-fit: cover; 
+   margin-right: 15px
+   ;
+   }
+   .menus
+   { display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+   }
+
+.menucontainer{
    display: flex;
-   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding-right: 25px;
+   gap: 40px;
+}
+
+.buttonsearch{
+   margin-left: -20px;
 }
