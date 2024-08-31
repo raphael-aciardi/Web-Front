@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("../Source/img2.jpg") no-repeat;
+    background: url("../Source/img3.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -128,5 +128,19 @@ body {
 .wrapper .btn a {
     text-decoration: none;
     color: black;
+}
+
+.btn-login {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFF;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
 }
 
