@@ -166,10 +166,18 @@ body {
  }
 
  
+
+ li{
+   list-style-type: none; /* Remove os marcadores */
+   padding: 0;            /* Remove o espaçamento à esquerda */
+   margin: 0;   
+   width: 20%;
+   height: 400px;   
+ }
  
 /* Slideshow container */
 .slideshow-container {
-   max-width: 1000px;
+   max-width: auto;
    position: relative;
    margin: auto;
  }
@@ -257,3 +265,17 @@ body {
    margin-left: -20px;
 }
 
+.filme{
+   height: 100%;
+   width: 90%;
+}
+
+.lista-filmes{
+   display: flex;
+   overflow-x: auto;
+   gap: 20px;
+   padding: 10px 0;
+   margin-left: 10px;
+   margin-right: 10px;
+   justify-content: center;
+}

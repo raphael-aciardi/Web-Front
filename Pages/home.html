@@ -13,29 +13,26 @@
         <h1 class="logo">LoungeLumière</h1>
         <div class="search-bar">
             <input type="text" placeholder="Buscar filmes e séries...">
-            <button class="buttonsearch"><img src="" alt=""></button>
+            <button class="buttonsearch">
+                <img src="" alt="Lupa">
+            </button>
         </div>
         <div class="menucontainer">
             <div class="menus">
-
                 <img src="../Source/perfil.png" alt="Perfil" class="fixed-size">
                 <p>Perfil</p>
             </div>
-
             <div class="menus">
                 <img src="../Source/ajuda.png" alt="Ajuda" class="fixed-size">
                 <p>Ajuda</p>
             </div>
-
             <div class="menus">
                 <img src="../Source/sair.png" alt="Sair" class="fixed-size">
                 <a href="../index.html">
-                    <p> Sair </p>
+                    <p>Sair</p>
                 </a>
-
             </div>
-
-
+        </div>
     </header>
 
     <main>
@@ -47,42 +44,52 @@
         </section>
 
         <section class="feed">
-            <div class="feed-row">
-                <h2>Em Alta</h2>
-                <div class="feed-content">
-                    <div class="feed-item">Item 1</div>
-                    <div class="feed-item">Item 2</div>
-                    <div class="feed-item">Item 3</div>
+       
 
-                </div>
-            </div>
-
-        </section>
-        =======
         <!-- Slideshow container -->
         <div class="slideshow-container">
-
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="../Source/Avengers_Endgame.jpg" style="width:100%" style="height:100%">
+                <ul class="lista-filmes">
+                    <li><img src="../Source/Avengers_Endgame.jpg" class="filme"></li>
+                    <li><img src="../Source/Avengers_Endgame.jpg" class="filme"></li>
+                    <li><img src="../Source/Avengers_Endgame.jpg" class="filme"></li>
+                    <li><img src="../Source/Avengers_Endgame.jpg" class="filme"></li>
+                </ul>
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="../Source/Dune.png" style="width:100%" style="height:100%">
+                <ul class="lista-filmes">
+                    <li><img src="../Source/Dune.png" class="filme"></li>
+                    <li><img src="../Source/Dune.png" class="filme"></li>
+                    <li><img src="../Source/Dune.png" class="filme"></li>
+                    <li><img src="../Source/Dune.png" class="filme"></li>
+                </ul>
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="../Source/I,_Robot.jpg" style="width:100%" style="height:100%">
+                <ul class="lista-filmes">
+                    <li><img src="../Source/I,_Robot.jpg" class="filme"></li>
+                    <li><img src="../Source/I,_Robot.jpg" class="filme"></li>
+                    <li><img src="../Source/I,_Robot.jpg" class="filme"></li>
+                    <li><img src="../Source/I,_Robot.jpg" class="filme"></li>
+                </ul>
                 <div class="text">Caption Three</div>
             </div>
+
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="../Source/LOTR.jpg" style="width:100%" style="height:100%">
+                <ul class="lista-filmes">
+                    <li><img src="../Source/LOTR.jpg" class="filme"></li>
+                    <li><img src="../Source/LOTR.jpg" class="filme"></li>
+                    <li><img src="../Source/LOTR.jpg" class="filme"></li>
+                    <li><img src="../Source/LOTR.jpg" class="filme"></li>
+                </ul>
                 <div class="text">Caption Four</div>
             </div>
 
@@ -90,6 +97,9 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
+        
+
         <br>
 
         <!-- The dots/circles -->
@@ -99,8 +109,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
-
-        >>>>>>> c545d53033a9ef07f1f8e1f04f86e8e97d81775e
+    </section>
     </main>
 
     <script src="../Scripts/script.js"></script>
