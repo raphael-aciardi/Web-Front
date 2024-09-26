@@ -140,7 +140,7 @@ a{
     margin-top: 2px;
 }
 
- a:hover{
+ a:hover a:focus{
     margin-top: 0.01px;
     font-size: 16.2px;
     padding-bottom: 0.5px;
@@ -154,3 +154,4 @@ a{
 .height-auto{
     height: auto;
 }
+
