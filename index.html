@@ -13,15 +13,15 @@
 <body>
 
     <div class="wrapper">
-        <form action="">
+        <form id="loginForm">
             <h1> Login </h1>
             <div class="input-box">
-                <input type="text" placeholder="E-mail" class="email" required>
+                <input type="text" placeholder="E-mail" id="email" required>
                 <i class='bx bxs-user'></i>
             </div>
 
             <div class="input-box">
-                <input type="password" placeholder="Senha" class="password" required>
+                <input type="password" placeholder="Senha" id="password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
@@ -32,8 +32,9 @@
                 <a href="Pages/redefinir_senha.html"> Esqueceu a senha?</a>
             </div>
 
-            <diV>
-                <a href="Pages/home.html" class="btn-login">Login </a>
+            <div>
+                <!-- Botão de envio do formulário -->
+                <button type="submit" class="btn-login">Login</button>
             </div>
 
             <div class="register-link">

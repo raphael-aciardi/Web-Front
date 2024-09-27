@@ -38,7 +38,7 @@ registerForm.addEventListener("submit", async (event) => {
             // Fazendo o fetch para cadastrar o usuário
             const response = await fetch('https://localhost:7032/Usuario', {  // URL da API
                 method: 'POST',
-                mode: 'no-cors', // Isso evita o bloqueio do CORS, mas limita a resposta
+                //mode: 'no-cors', // Isso evita o bloqueio do CORS, mas limita a resposta
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -47,8 +47,7 @@ registerForm.addEventListener("submit", async (event) => {
 
             if (response.ok) {
                 alert('Cadastro realizado com sucesso!');
-                // Redirecionar para outra página ou limpar o formulário
-                form.reset();
+                window.location.href = '../index.html';
             } else {
                 const errorMessage = await response.text();
                 alert(`Erro ao cadastrar: ${errorMessage}`);
