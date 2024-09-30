@@ -56,6 +56,7 @@ header {
 
 
 main {
+   padding: 20px;
    margin-top: 80px;
 }
 
@@ -254,6 +255,16 @@ img {
 
 .buttonsearch{
    margin-left: -20px;
+   background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  & :hover{
+   border: 2px solid #fff;
+  }
 }
 
 .filme{
@@ -271,3 +282,43 @@ img {
    justify-content: center;
 }
 
+
+#filmeContainer{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de tamanhos iguais */
+   gap: 20px; /* Adiciona um espaçamento entre os elementos (opcional) */
+    
+}
+
+.filme > img{
+   width: 70%;
+   height: 70%;
+   object-fit: cover;
+}
+#lupa{
+   width: 2em;
+   height: 2em;
+   border-radius: 90%;
+   margin-left: -17px;
+}
+.filme{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 310px;
+   height: 340px;
+   background-color: #222;
+   border-radius: 10%;
+  & div {
+   border: #717171 1px solid;
+  }
+
+  & h2{ 
+   margin-top: 10px;
+   text-shadow: 2px 2px 5px #000;
+  }
+
+  & p:last-child{
+   margin-bottom: 10px;
+  }
+}

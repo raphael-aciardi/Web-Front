@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const url = "https://localhost:7032/Filme?skip=0&take=50";
+const url = "https://localhost:7032/Filme?skip=0&take=50";
 
   // Função para buscar dados da API
   const fetchFilmes = async () => {
@@ -47,10 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Criação dos elementos para exibir informações do filme
           filmeElement.innerHTML = `
-              <h2>Título: ${filme.titulo}</h2>
-              <p>Duração: ${filme.duracao} segundos</p>
-              <p>Gênero: ${filme.genero}</p>
+            <div class="filme">
+              <h2>${filme.titulo}</h2>            
               <img src="${filme.caminho}" alt="${filme.titulo}" />
+              <p>Duração: ${filme.duracao} minutos</p>
+              <p>Gênero: ${filme.genero}</p>
+              </div>
           `;
 
           // Adiciona o elemento do filme ao container principal
@@ -60,4 +61,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Chama a função para buscar filmes
   fetchFilmes();
-});
